@@ -588,7 +588,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #98c593;
+		color: #93A7C5;
 	}
 
 	sub {
@@ -662,7 +662,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: #98c593;
+		background-color: #93A7C5;
 		border: 0;
 		border-radius: 3.5em;
 		color: #ffffff;
@@ -952,7 +952,9 @@ input, select, textarea {
 		}
 
 /* Image */
-
+img {
+	border-radius: 10px; /* Adjust the value to control the roundness of the corners */
+}
 	.image {
 		position: relative;
 		display: inline-block;
@@ -971,6 +973,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			border-radius: 10px; 
 		}
 
 		.image.featured {
@@ -2411,7 +2414,7 @@ input, select, textarea {
   .ag-timeline_line-progress {
 	width: 100%;
 	height: 20%;
-	background-color: #A7EAA0;
+	background-color: #A0B5EA;
   }
   
   .ag-timeline-card_box {
@@ -2428,10 +2431,10 @@ input, select, textarea {
 	margin: 0 -28px 0 14px;
   }
   .ag-timeline-card_point {
-	height: 50px;
-	line-height: 50px;
-	width: 50px;
-	border: 3px solid #A7EAA0;
+	height: 60px; /* Adjust height */
+    line-height: 60px; /* Adjust line-height */
+    width: 60px;
+	border: 3px solid #A0B5EA;
 	background-color: #39454B;
   
 	text-align: center;
@@ -2445,7 +2448,7 @@ input, select, textarea {
   }
   .js-ag-active .ag-timeline-card_point {
 	color: #39454B;
-	background-color: #98C593;
+	background-color: #93A7C5;
   }
   .ag-timeline-card_meta-box {
 	display: inline-block;
@@ -2456,13 +2459,13 @@ input, select, textarea {
 	font-family: 'ESL Legend', sans-serif;
 	font-weight: bold;
 	font-size: 28px;
-	color: #98C593;
+	color: #93A7C5;
   }
   .ag-timeline-card_item {
 	display: inline-block;
 	width: 45%;
 	margin: -77px 0 0;
-	background-color: #98C593;
+	background-color: #93A7C5;
   
 	opacity: 0;
   
