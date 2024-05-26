@@ -3,9 +3,13 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900');
-@import url('fontawesome-all.min.css');
 
+@font-face {
+    font-family: "Conthrax";
+    src: url("conthrax-sb.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 	@include breakpoints((
