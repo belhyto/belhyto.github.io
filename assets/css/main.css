@@ -1062,7 +1062,24 @@ img {
 		border-radius: 50px;
 	
 	}
-	
+	@media (hover: none) and (pointer: coarse), (max-width: 768px) {
+		.card a:hover .card--display,
+		.card a:focus .card--display {
+			display: none;
+		}
+		
+		.card a:hover .card--hover,
+		.card a:focus .card--hover {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 30px;
+			border-radius: 50px;
+		}
+	}
 	
 /* Sections/Article */
 
@@ -2425,7 +2442,7 @@ img {
     }
 
     .ag-timeline-card_item {
-        width: calc(100% - 90px);
+        width: calc(70% - 90px);
         margin: 0 0 20px 45px;
         display: block;
     }
@@ -2436,31 +2453,24 @@ img {
     }
 }
 
-@media only screen and (max-width: 767px) {
-    .ag-timeline_line {
-        display: none; /* Hide the timeline line on smaller screens */
-    }
+@media only screen and (max-width: 400px) {
 
-    .ag-timeline_item {
-        width: 100%; /* Ensure each timeline item spans the full width */
-        text-align: left; /* Align text to the left for all items */
-        margin-bottom: 20px; /* Add bottom margin to separate items */
-    }
 
     .ag-timeline-card_box {
-        padding: 0; /* Remove padding around each timeline card */
+        padding: 25; /* Remove padding around each timeline card */
     }
-
-    .ag-timeline-card_meta-box {
-        display: none; /* Hide the meta box on smaller screens */
-    }
-
+   
     .ag-timeline-card_point-box {
         margin-left: 8px; /* Adjust the left margin of the point box */
     }
 
     .ag-timeline-card_item {
-        width: 100%; /* Ensure timeline card content spans the full width */
-        margin-left: 0; /* Reset left margin */
+        width: 25%; /* Ensure timeline card content spans the full width */
+        margin-left: 30; /* Reset left margin */
+		margin-right: 4;
     }
+	.small-i{
+		width: 50% ;
+		height: 180px ;
+	}
 }
