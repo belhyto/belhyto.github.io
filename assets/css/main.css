@@ -1062,7 +1062,7 @@ img {
 		border-radius: 50px;
 	
 	}
-	@media (hover: none) and (pointer: coarse), (max-width: 768px) {
+	@media(max-width: 768px) {
 		.card a:hover .card--display,
 		.card a:focus .card--display {
 			display: none;
@@ -2052,70 +2052,62 @@ img {
 
 /* Footer */
 
-	#footer {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
-		position: relative;
-		margin: 0;
-		line-height: 1em;
-		padding: 1.5em;
-		background: #39454b;
-		color: rgba(185, 186, 187, 0.5);
-		overflow: hidden;
-	}
+#footer {
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Footer text color */
+    padding: 20px 0; /* Footer padding */
+    text-align: center; /* Center the text */
+}
 
-		#footer > * {
-			margin-bottom: 0;
-		}
+#footer .icons {
+    list-style: none; /* Remove list style */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons */
+}
 
-		#footer a {
-			color: inherit;
-		}
+#footer .icons li {
+    margin: 0 10px; /* Spacing between icons */
+}
 
-			#footer a:hover {
-				color: #b9babb;
-			}
+#footer .icons a {
+    color: #fff; /* Icon color */
+    font-size: 24px; /* Icon size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
 
-		#footer ul.menu {
-			margin: 0;
-		}
+#footer .icons a:hover {
+    color: #1da1f2; /* Icon color on hover (example: Twitter blue) */
+}
 
-			#footer ul.menu li {
-				border-left-color: rgba(185, 186, 187, 0.2);
-				font-size: 0.9em;
-			}
+#footer .menu {
+    list-style: none; /* Remove list style */
+    padding: 0; /* Remove padding */
+    margin: 20px 0 0; /* Margin for spacing above */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the text */
+}
 
-		@media screen and (max-width: 1000px) {
+#footer .menu li {
+    margin: 0 10px; /* Spacing between menu items */
+}
 
-			#footer {
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-				-moz-justify-content: center;
-				-webkit-justify-content: center;
-				-ms-justify-content: center;
-				justify-content: center;
-				line-height: 1.5em;
-				text-align: center;
-				padding: 2em 1em 2em 1em;
-			}
+#footer .menu li a {
+    color: #fff; /* Menu text color */
+    text-decoration: none; /* Remove underline */
+}
 
-				#footer > * {
-					margin: 0 0 1em 0;
-				}
+#footer .menu li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
 
-		}
+.material-icons {
+    font-size: 24px; /* Icon size */
+    vertical-align: middle; /* Align icons vertically in the middle */
+}
+
 
 		@media screen and (max-width: 736px) {
 
@@ -2453,7 +2445,7 @@ img {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 
 
     .ag-timeline-card_box {
