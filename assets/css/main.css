@@ -2052,6 +2052,8 @@ img {
 
 /* Footer */
 
+/* Footer */
+
 #footer {
     background-color: #333; /* Footer background color */
     color: #fff; /* Footer text color */
@@ -2065,6 +2067,7 @@ img {
     margin: 0; /* Remove margin */
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center the icons */
+    flex-wrap: wrap; /* Allow wrapping for icons */
 }
 
 #footer .icons li {
@@ -2088,6 +2091,7 @@ img {
     margin: 20px 0 0; /* Margin for spacing above */
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center the text */
+    flex-wrap: wrap; /* Allow wrapping for menu items */
 }
 
 #footer .menu li {
@@ -2108,23 +2112,28 @@ img {
     vertical-align: middle; /* Align icons vertically in the middle */
 }
 
+@media screen and (max-width: 736px) {
 
-		@media screen and (max-width: 736px) {
+    #footer .icons {
+        flex-direction: row; /* Stack icons vertically */
+        align-items: center; /* Center icons */
+    }
 
-			#footer ul.menu li {
-				border-left: none;
-				display: block;
-				line-height: inherit;
-				margin: 0.25em 0 0 0;
-				padding: 0.25em 0 0 0;
-			}
+    #footer .icons li {
+        margin: 10px 0; /* Space between icons */
+    }
 
-				#footer ul.menu li:first-child {
-					margin-top: 0;
-					padding-top: 0;
-				}
+    #footer .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center menu items */
+        margin-top: 10px; /* Reduce top margin */
+    }
 
-		}
+    #footer .menu li {
+        margin: 5px 0; /* Space between menu items */
+    }
+}
+
 
 /* Intro */
 
