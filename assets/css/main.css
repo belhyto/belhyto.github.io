@@ -1926,6 +1926,60 @@ img {
 				transform: translateX(100%);
 			}
 
+			
+			#main-section .content {
+				display: flex;
+				width: 100%;
+				height: 100%;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+			
+			#main-section .grid {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 0;
+				width: 100%;
+				height: 100%;
+			}
+			
+			#main-section .grid-item {
+				padding: 20px;
+				background: rgba(0, 0, 0, 0.5);
+				border-radius: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+			}
+			
+			#main-section .grid-item header h2 {
+				margin: 0;
+				color: white;
+			}
+			
+			#main-section .grid-item p {
+				color: white;
+			}
+			
+			#main-section .grid-item .button {
+				margin-top: 10px;
+			}
+			
+			.main.style4 {
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+				-moz-justify-content: center;
+				-webkit-justify-content: center;
+				-ms-justify-content: center;
+				justify-content: center;
+				text-align: center;
+				padding: 0;
+			}
 		.main.style3 {
 			text-align: center;
 			padding: 6em 0 6em 0;
@@ -1970,7 +2024,17 @@ img {
 		body.is-touch .main {
 			background-attachment: scroll !important;
 		}
-
+		@media screen and (max-width: 1280px) {
+			#main-section .grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+		
+		@media screen and (max-width: 736px) {
+			#main-section .grid {
+				grid-template-columns: 1fr;
+			}
+		}
 		@media screen and (max-width: 1920px) {
 
 			.main.style2 .content {
@@ -2034,7 +2098,7 @@ img {
 					-ms-transform: none;
 					transform: none;
 				}
-
+              
 			.main.style3 {
 				text-align: center;
 				padding: 3em 10px 3em 10px;
@@ -2199,6 +2263,8 @@ img {
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
+
+
 /* Contact */
 
 	#contact {
@@ -2474,4 +2540,36 @@ img {
 		width: 50% ;
 		height: 180px ;
 	}
+}
+
+
+
+#main-section {
+    background: url("images/overlay.png"), url("https://res.cloudinary.com/dpqmjvxkm/image/upload/v1716676207/intro_jcl7cd.jpg");
+    background-size: 256px 256px, cover;
+    background-attachment: fixed, fixed;
+    background-position: top left, bottom center;
+    background-repeat: repeat, no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#main-section .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#main-section .grid-item {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
