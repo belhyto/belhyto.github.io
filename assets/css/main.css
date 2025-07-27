@@ -2300,16 +2300,12 @@ img {
     text-align: center;
     padding: 0;
 }
-
-
 .main-section.dark {
 	color: #ffffff;
 }
-
 	.main-section.dark a {
 		color: inherit;
 	}
-
 	.main-section.dark .button.style2 {
 		border-color: #ffffff;
 	}
@@ -2347,14 +2343,12 @@ img {
     margin-bottom: 1em;
     color: #333;
 }
-
 .video-container {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
     gap: 1em;
     justify-items: center;
 }
-
 .video-container video {
     width: 70%;
 	height: 70%;
