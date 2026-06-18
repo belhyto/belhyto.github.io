@@ -184,7 +184,6 @@ body {
 	height: 100%;
 	min-width: 320px;
 	cursor: none;
-	padding-bottom: 5em;
 }
 
 body.is-preload *,
@@ -1962,7 +1961,8 @@ body.is-touch .main {
   padding: 1em 2em;
   width: fit-content;
 
-  background: #000;
+  background: #000000bd;
+  backdrop-filter: blur(10px);
   border: 3px solid #0066FF;
   border-radius: 999px;
   box-shadow: 5px 5px 0 #0066FF;
