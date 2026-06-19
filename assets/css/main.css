@@ -556,6 +556,8 @@ button {
 	position: relative;
 	text-align: center;
 	text-decoration: none;
+	 border: 3px solid #0000;
+  box-shadow: 5px 5px 0 #0000;
 }
 
 input[type="button"].down,
