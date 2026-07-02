@@ -2185,6 +2185,13 @@ body.is-touch .main {
 	background-position: top left, center center;
 }
 
+#janva {
+	background: url("images/overlay.png"), url("https://res.cloudinary.com/dpqmjvxkm/image/upload/v1783004807/Janva_Sustainability_Platform_uflyhp.png");
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
 
 /* Contact */
 
