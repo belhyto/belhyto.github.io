@@ -1465,8 +1465,8 @@ body.is-touch .poptrox-popup .closer {
 
 
 .gallery {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	width: 100%;
 	margin: 0 auto 2em auto;
 }
@@ -1474,13 +1474,19 @@ body.is-touch .poptrox-popup .closer {
 .gallery article {
 	transition: transform 1s ease, opacity 1s ease;
 	transform: translateX(0);
-	width: 25%;
+	width: 100%;
 	opacity: 1.0;
 }
 
 .gallery article .image {
 	margin: 0;
 	display: block;
+}
+
+.gallery .image img {
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 0;
 }
 
 .gallery.inactive article {
@@ -1505,7 +1511,8 @@ body.is-touch .poptrox-popup .closer {
 
 @media screen and (max-width: 480px) {
 	.gallery {
-		flex-direction: column;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 4px;
 	}
 
 	.gallery article {
