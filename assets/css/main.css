@@ -2564,6 +2564,10 @@ body.is-touch .main {
 	background: #0f3460;
 }
 
+#main-section .grid-item.item8 {
+	background: #533483;
+}
+
 #main-section .grid-item header h2 {
 	margin: 0;
 }
