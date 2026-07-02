@@ -2192,6 +2192,41 @@ body.is-touch .main {
 	background-position: top left, center center;
 }
 
+#zb1 {
+	background: url("images/overlay.png"), url("https://res.cloudinary.com/dpqmjvxkm/image/upload/v1783012526/ZEROBASE_3D-_bg_eqaxvz.jpg");
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
+#lightway {
+	background: url("images/overlay.png"), url("https://res.cloudinary.com/dpqmjvxkm/image/upload/v1783006848/Screenshot_2026-07-02_211018_qdfp7t.png");
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
+#neuroverse {
+	background: url("images/overlay.png"), url("https://res.cloudinary.com/dpqmjvxkm/image/upload/v1783012279/Slide1_icgtnq.jpg");
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
+#storeful {
+	background: url("images/overlay.png"), url("https://res.cloudinary.com/dpqmjvxkm/image/upload/v1783012279/Slide1_icgtnq.jpg");
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
+#wolyf {
+	background: url("images/overlay.png"), url("https://res.cloudinary.com/dpqmjvxkm/image/upload/v1783012673/Screenshot_2026-07-02_224708_l5czth.png");
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
 
 /* Contact */
 
